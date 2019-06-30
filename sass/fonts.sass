@@ -1,0 +1,16 @@
+@mixin font($name, $url, $weight, $style) 
+	font-family: $name
+	src: $url
+	font-weight: $weight
+	font-style: $style
+
+@font-face
+	@include font("SourceSansPro", url('../fonts/SourceSansPro/SourceSansPro-Light.ttf'), 300, normal);
+@font-face
+	@include font("SourceSansPro", url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf'), 400, normal);
+@font-face
+	@include font("SourceSansPro", url('../fonts/SourceSansPro/SourceSansPro-SemiBold.ttf'), 600, normal);
+@font-face
+	@include font("SourceSansPro", url('../fonts/SourceSansPro/SourceSansPro-Bold.ttf'), 700, normal);
+@font-face
+	@include font("SourceSansPro", url('../fonts/SourceSansPro/SourceSansPro-Black.ttf'), 900, normal);
